@@ -139,7 +139,13 @@ const Home = () => {
     <div>
       <ReactMediaRecorder
         video
-        render={({ status, startRecording, stopRecording, mediaBlobUrl }) => (
+        render={({
+          status,
+          startRecording,
+          stopRecording,
+          mediaBlobUrl,
+          download,
+        }) => (
           <div className="w-full mx-auto ">
             <video
               className="w-1/2 mx-auto mt-10 mb-5 rounded-lg"
@@ -161,6 +167,7 @@ const Home = () => {
               >
                 Stop Recording
               </button>
+            
             </div>
           </div>
         )}
